@@ -1,0 +1,26 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+
+.menu {
+    padding: 15px;
+}
+
+.menu li {
+    float: left;
+    padding: 8px 30px;
+    position: relative;
+}
+
+.club {
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    display: none;
+}
+
+.menu li ul li {
+    text-decoration: none;
+}
+
+
+.menu li:hover .club {display: block;}
