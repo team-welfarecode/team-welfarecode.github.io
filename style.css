@@ -33,12 +33,12 @@ a {color: black; text-decoration: none;}
 }
 
 .dropMenu_item {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .dropMenu {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .menu li:hover .club {display: block;}
