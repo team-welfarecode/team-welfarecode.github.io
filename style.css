@@ -1,14 +1,21 @@
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0;font-family: 'Black Han Sans', sans-serif;}
 li {list-style: none;}
+a {color: black; text-decoration: none;}
 
-.menu {
-    padding: 15px;
+.blind {display: none;}
+
+.logo {
+    display: inline-block;
+}
+
+.menu{
+    text-align: center;
 }
 
 .menu li {
-    float: left;
+    display: inline-block;
     padding: 8px 30px;
-    position: relative;
+    position: relative; 
 }
 
 .club {
@@ -18,9 +25,21 @@ li {list-style: none;}
     display: none;
 }
 
-.menu li ul li {
-    text-decoration: none;
+.services {
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    display: none;
 }
 
+.dropMenu_item {
+    font-size: 10px;
+}
+
+.dropMenu {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .menu li:hover .club {display: block;}
+.menu li:hover .services {display: block;}
