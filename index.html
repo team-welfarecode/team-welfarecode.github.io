@@ -2,46 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부트스트랩 101 템플릿</title>
 
-    <title>WELFARE-CODE HOMEPAGE</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+  <style>
+    .dropdown:hover>.dropdown-menu{
+      display: block;
+    }
+    .navbar-nav > li{
+      padding-right:1rem;
+      padding-left:1rem;
+      font-weight: 900;
+    } 
+    body {
+      font-family: 'Nanum Gothic Coding', monospace;
+    }
+  </style>
+
 </head>
 
 <body>
-    <div class="header_wrap">
-        <h1 class="logo">
-            <a href="/"><span class="blind">LOGO</span></a>
-        </h1>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="/club/introduction"><strong><span class="dropMenu">WELFARE-CODE</span></strong></a>
-                    <ul class="club">
-                        <li><a href="/club/introduction" class="dropMenu_item">CLUB INTRODUCTION</a></li>
-                        <li><a href="/club/values" class="dropMenu_item">CLUB VALUE</a></li>
-                        <li><a href="/club/milestone" class="dropMenu_item">MILESTONES</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/services/credit_bot"><strong><span class="dropMenu">SERVICES</span></strong></a>
-                    <ul class="services">
-                        <li><a href="/services/credit_bot" class="dropMenu_item">고교학점제봇</a></li>
-                        <li><a href="/services/lunch_on " class="dropMenu_item">LUNCH-ON</a></li>
-                        <li><a href="/services/etc" class="dropMenu_item">AND SO ON</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/news"><strong><span class="dropMenu">NEWS</span></strong></a>
-                </li>
-                <li>
-                    <a href="/members"><strong><span class="dropMenu">MEMBERS</span></strong></a>
-                </li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">WC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              WELFARE-CODE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/club/instruction">CLUB INSTRUCTION</a></li>
+              <li><a class="dropdown-item" href="/club/values">CLUB VALUES</a></li>
+              <li><a class="dropdown-item" href="/club/milestone">CLUB MILESTONE</a></li>
             </ul>
-        </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              SERVICES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/services/credit_bot">고교학점제 봇</a></li>
+              <li><a class="dropdown-item" href="/services/lunchon">LUNCH-ON</a></li>
+              <li><a class="dropdown-item" href="/services/etc">AND SO ON</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/news">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/members">MEMBERS</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 
 </html>
