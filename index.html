@@ -23,6 +23,8 @@
     /* brand 말고 navbar에만 애니메이션 적용 */
 
     .container-fluid {
+      z-index: 1;
+      position: relative;
       opacity: 0;
 
       animation-delay: 2s;
@@ -114,7 +116,13 @@
       <img src="/img/logo.png " width="500" height="500" alt="LOGO">
     </a>
   </div>
-  <h1>123</h1>
+  <div class="main_img">
+      <img src="/img/main_img.jpg" alt="MAIN_IMG">
+  </div>
+  <div class="slogan">
+    <h1>CODE FOR MINORITY GROUP</h1>
+    <h3>사회적 약자들을 위한 코딩,<br>그 길을 개척합니다.</h3>
+  </div>
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
