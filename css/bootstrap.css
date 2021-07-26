@@ -6,6 +6,77 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+/*애니메이션 정의*/
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform:scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+    height: 0;
+    width: 0;
+  }
+}
+
+.wrapper {
+  display: block;
+  text-align: center; 
+	height: 85vh; 
+	line-height: 70vh;
+
+  animation-name: fadein, logo;
+  animation-delay: 0s, 2s;
+  animation-duration: 2.5s, 1s;
+  animation-fill-mode: forwards;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -3959,6 +4030,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+
 }
 .navbar-nav {
   display: flex;
