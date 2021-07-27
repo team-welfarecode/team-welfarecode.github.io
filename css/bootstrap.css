@@ -81,6 +81,16 @@
     width: 0;
   }
 }
+
+@keyframes moveup {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    
+  }
+}
+
 .slogan {
   text-align: center;
   background-color: white;
@@ -93,11 +103,36 @@
 
 .main_img {
   text-align: center;
+  max-width: 100%;
+  height: auto;
 
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   animation-name: no, fadein;
   animation-delay: 0s,3s;
   animation-duration: 5s, 0.5s;
+  animation-fill-mode: forwards;
+  
+}
+
+.news_img {
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+
+  padding-bottom: 0.5rem;
+
+
+  animation-name: moveup;
+  -moz-animation-name: moveup;
+  -webkit-animation-name: moveup;
+  -o-animation-name: moveup;
+
+  animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+
   animation-fill-mode: forwards;
   
 }
