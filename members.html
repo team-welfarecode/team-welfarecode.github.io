@@ -21,11 +21,34 @@
             $('#header').load('headernav.html');
         });
     </script>
+
+    <style>
+        .member_introduction {
+            text-align: center;
+            padding-top: 2rem;
+        }
+
+        .member {
+            font-size: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .member {
+                font-size: 40px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
     <div id="header"></div>
-    <h1>MEMBERS</h1>
+    <div class="member_introduction">
+        <h1>멤버소개</h1>
+        <div class="member">
+            표준성
+        </div>
+    </div>
 </body>
 
 </html>
