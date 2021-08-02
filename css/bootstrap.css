@@ -117,7 +117,7 @@
   animation-fill-mode: forwards;
 }
 
-.news_img {
+.news_img .footer-container{
   width: 100%;
   text-align: center;
   max-width: 100%;
