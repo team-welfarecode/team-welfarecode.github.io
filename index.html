@@ -21,6 +21,7 @@
       overflow: hidden;
       height: 100%;
     }
+
     /* 갖다 대기만 해도(hover) dropdown menu 보이게끔 */
 
     .dropdown:hover>.dropdown-menu {
@@ -70,14 +71,24 @@
       font-family: 'Nanum Gothic Coding', monospace;
     }
 
-    .main_img {
-      bottom: 0;
+    #main_img {
       max-width: 100%;
-      width: 100%;
-      height: auto  ;
+      max-height: 100%;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      overflow: auto;
+      right: 0;
+      top: 0;
+      -o-object-fit: contain;
+      object-fit: contain;
     }
-    
 
+    @media (max-width: 600px) {
+      body {
+        overflow : hidden;
+      }
+    }
   </style>
 </head>
 
@@ -97,8 +108,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/club/introduction" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/club/introduction" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 WELFARE-CODE
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -108,8 +119,8 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/services/credit_bot" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="/services/credit_bot" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 SERVICES
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -137,7 +148,7 @@
       <img src="/img/logo.png " width="500" height="500" alt="LOGO">
     </a>
   </div>
-  <div class="main_img">
+  <div id="main_img">
     <img src="/img/main_img.jpg" alt="MAIN_IMG">
   </div>
   <div class="slogan">
@@ -149,15 +160,24 @@
   <div id="footer"></div>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-  $(function () {
-    $('#footer').load('./layout/footer.html');    
-  });
-  setTimeout(function() {
-    $('body').addClass("onscroll")
-  }, 4200)    
-</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('#footer').load('./layout/footer.html');
+    });
+    setTimeout(function () {
+      $('body').addClass("onscroll")
+    }, 4200)
+
+    function imgresize() {
+      var img = document.getElementById('main_img');
+      img.style.width = window.innerWidth + 'px';
+    }
+    imgresize();
+
+    window.addEventListener('resize', imgresize);
+  </script>
 </body>
 
 </html>
