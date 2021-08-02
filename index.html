@@ -74,7 +74,7 @@
       bottom: 0;
       max-width: 100%;
       width: 100%;
-      height: auto;
+      height: auto  ;
     }
     
 
@@ -145,9 +145,15 @@
     <h3>사회적 약자들을 위한 코딩,<br>그 길을 개척합니다.</h3>
   </div>
 
+  <!-- FOOTER 달기 -->
+  <div id="footer"></div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
+  $(function () {
+    $('#footer').load('./layout/footer.html');    
+  });
   setTimeout(function() {
     $('body').addClass("onscroll")
   }, 4200)    
