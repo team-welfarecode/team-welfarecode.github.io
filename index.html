@@ -17,6 +17,9 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
   <style>
+    body {
+      overflow: hidden;
+    }
     /* 갖다 대기만 해도(hover) dropdown menu 보이게끔 */
 
     .dropdown:hover>.dropdown-menu {
@@ -73,7 +76,10 @@
       width: 100vw;
       height: auto;
       padding-top: 1rem;
+
+      --scroll : false;
     }
+    
 
   </style>
 </head>
@@ -142,6 +148,13 @@
     <h3>사회적 약자들을 위한 코딩,<br>그 길을 개척합니다.</h3>
   </div>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+  setTimeout(function() {
+    $('body').addClass("onscroll")
+  }, 4200)    
+</script>
 </body>
 
 </html>

@@ -90,6 +90,9 @@
     
   }
 }
+.onscroll {
+  overflow: auto;
+}
 
 .slogan {
   text-align: center;
@@ -111,7 +114,6 @@
   animation-delay: 0s,3s;
   animation-duration: 5s, 0.5s;
   animation-fill-mode: forwards;
-  
 }
 
 .news_img {
