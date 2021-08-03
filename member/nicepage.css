@@ -4,6 +4,10 @@
  * Copyright 2014-2020 Froala Labs
  */
 
+ * {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -32647,6 +32651,11 @@ a.u-link.u-text-hover-palette-5-light-3:hover {
 a.u-button-style.u-text-palette-5-base,
 a.u-button-style.u-text-palette-5-base[class*="u-border-"] {
   color: #b9c1cc !important;
+}
+
+.u-text-palette-6-base{
+  color: #77C4EE !important;
+
 }
 a.u-button-style.u-text-palette-5-base:hover,
 a.u-button-style.u-text-palette-5-base[class*="u-border-"]:hover,
