@@ -77,11 +77,26 @@
       object-fit: contain;
     }
 
+    .short-text {
+      display: none;
+    }
+
     @media (max-width: 600px) {
       body {
         overflow: hidden;
       }
+      
+      /* 작은 화면일 때 푸터에 웹사이트 주소 대신 'NOTION'으로 표기 */
+
+      .full-text {
+        display: none;
+      }
+
+      .short-text {
+        display: inline-block;
+      }
     }
+
   </style>
 </head>
 
@@ -142,7 +157,7 @@
     </a>
   </div>
   <div id="main_img">
-    <img src="/img/main_img.jpg" alt="MAIN_IMG" width="100%"> 
+    <img src="/img/main_img.jpg" alt="MAIN_IMG" width="100%">
   </div>
   <div class="slogan">
     <h1>CODE FOR MINORITY GROUP</h1>
