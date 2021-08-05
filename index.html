@@ -16,6 +16,9 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
   <style>
     body {
       overflow: hidden;
@@ -71,11 +74,6 @@
       font-family: 'Nanum Gothic Coding', monospace;
     }
 
-    #main_img {
-      width: 100%;
-      -o-object-fit: contain;
-      object-fit: contain;
-    }
 
     .short-text {
       display: none;
@@ -176,7 +174,7 @@
     });
     setTimeout(function () {
       $('body').addClass("onscroll")
-    }, 4200)
+    }, 1500)
 
     function imgresize() {
       var img = document.getElementById('main_img');
